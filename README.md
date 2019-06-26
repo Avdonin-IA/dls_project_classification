@@ -8,4 +8,6 @@
 
 #### Скриншоты работы бота
 https://pp.userapi.com/c857636/v857636832/8f1/bLCpxbyBk6Y.jpg
+
+
 https://pp.userapi.com/c857636/v857636832/8f9/BuUtXV4GNXE.jpg
