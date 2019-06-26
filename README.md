@@ -1,1 +1,11 @@
-# dls_project_classification
+#### Создание модели
+В качестве датасета для обучения был использован датасет, содержащий различные породы собак:  https://www.kaggle.com/jessicali9530/stanford-dogs-dataset
+Модель для обучения - DenseNet201.
+
+#### Телеграм-бот
+Был создан телеграм-бот, который классифицирует отправленное ему изображение. Телеграм-бот - https://t.me/dls_dog_classifier_bot
+Дополнительно было добавлено описание и ответ на команду /start.
+
+#### Скриншоты работы бота
+https://pp.userapi.com/c857636/v857636832/8f1/bLCpxbyBk6Y.jpg
+https://pp.userapi.com/c857636/v857636832/8f9/BuUtXV4GNXE.jpg

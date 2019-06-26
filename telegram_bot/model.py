@@ -13,7 +13,7 @@ from fastai.vision import load_learner, Image
 class ClassPredictor:
     def __init__(self):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.model = load_learner("../model/LEGO brick images")
+        self.model = load_learner("../model")
         self.to_tensor = transforms.ToTensor()
 
     def predict(self, img_stream):
@@ -41,3 +41,4 @@ class ClassPredictor:
         # переводим картинку в тензор и оборачиваем в объект Image, который использует fastai у себя внутри
         image = Image(self.to_tensor(image))
         return image
+
