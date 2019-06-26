@@ -5,6 +5,10 @@ from config import reply_texts
 import numpy as np
 from PIL import Image
 from io import BytesIO
+import datetime
+
+import warnings
+warnings.filterwarnings("ignore")
 
 
 model = ClassPredictor()
@@ -28,7 +32,7 @@ def send_prediction_on_photo(bot, update):
 
     # теперь отправим результат
     update.message.reply_text('I think it\'s a ' + class_)
-    print("Sent Answer to user, predicted: {}".format(class_))
+    print("[{}] Sent Answer to user, predicted: {}".format(datetime.datetime.now(), class_))
 
 def start(bot, update):
     update.message.reply_text('Hello! Here I try to classify dogs. I know such breeds of dogs:\n\
@@ -49,7 +53,7 @@ def start(bot, update):
 - vizsla;\n- english setter;\n- irish settler;\n- gordon setter;\n- britanny spaniel;\n\
 - clumber;\n- english springer;\n- welsh springer spaniel;\n- cocker spaniel;\n\
 - sussex spaniel;\n- irish water spaniel;\n- kuvasz;\n- schipperke.')
-    print("I have greeted someone just now.")
+    print("[{}] I have greeted someone just now.".format(datetime.datetime.now()))
 
 if __name__ == '__main__':
     from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
